@@ -1,0 +1,537 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.hsmobile.flutter_mvvm"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:14:5-66
+14-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:14:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:15:5-79
+15-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:15:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:16:5-81
+16-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:16:22-78
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[:firebase_analytics] D:\Flutter Project\TheMovieApp\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+17-->[:firebase_analytics] D:\Flutter Project\TheMovieApp\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->[:firebase_analytics] D:\Flutter Project\TheMovieApp\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-68
+18-->[:firebase_analytics] D:\Flutter Project\TheMovieApp\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-65
+19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+19-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+19-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
+20    <uses-permission android:name="android.permission.VIBRATE" />
+20-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
+20-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
+21    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+21-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+21-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+22-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+22-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+23    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+23-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:26:5-110
+23-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:26:22-107
+24
+25    <application
+25-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:18:5-92:19
+26        android:name="com.hsmobile.flutter_mvvm.Application"
+26-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:20:9-36
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\9a9a3c899940eeda371cc16dbe6d6cdf\core-1.3.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:23:9-43
+30        android:label="@string/app_name"
+30-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:21:9-41
+31        android:requestLegacyExternalStorage="true"
+31-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:19:9-52
+32        android:usesCleartextTraffic="true" >
+32-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:22:9-44
+33        <activity
+33-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:24:9-56:20
+34            android:name="com.hsmobile.flutter_mvvm.MainActivity"
+34-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:25:13-41
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:28:13-163
+36            android:hardwareAccelerated="true"
+36-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:29:13-47
+37            android:launchMode="singleTop"
+37-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:26:13-43
+38            android:theme="@style/LaunchTheme"
+38-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:27:13-47
+39            android:windowSoftInputMode="adjustResize" >
+39-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:30:13-55
+40
+41            <!--
+42                 Specifies an Android theme to apply to this Activity as soon as
+43                 the Android process has started. This theme is visible to the user
+44                 while the Flutter UI initializes. After that, this theme continues
+45                 to determine the Window background behind the Flutter UI.
+46            -->
+47            <meta-data
+47-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:35:13-38:19
+48                android:name="io.flutter.embedding.android.NormalTheme"
+48-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:36:17-72
+49                android:resource="@style/NormalTheme" />
+49-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:37:17-54
+50            <!--
+51                 Displays an Android View that continues showing the launch screen
+52                 Drawable until Flutter paints its first frame, then this splash
+53                 screen fades out. A splash screen is useful to avoid any visual
+54                 gap between the end of Android's launch screen and the painting of
+55                 Flutter's first frame.
+56            -->
+57            <meta-data
+57-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:44:13-47:19
+58                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+58-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:45:17-81
+59                android:resource="@drawable/launch_background" />
+59-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:46:17-63
+60
+61            <intent-filter>
+61-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:48:13-51:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:49:17-68
+62-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:49:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:50:17-76
+64-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:50:27-74
+65            </intent-filter>
+66            <intent-filter>
+66-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:52:13-55:29
+67                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+67-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:53:17-69
+67-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:53:25-66
+68
+69                <category android:name="android.intent.category.DEFAULT" />
+69-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:54:17-76
+69-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:54:27-73
+70            </intent-filter>
+71        </activity>
+72        <!--
+73             Don't delete the meta-data below.
+74             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+75        -->
+76        <meta-data
+76-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:59:9-61:33
+77            android:name="flutterEmbedding"
+77-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:60:13-44
+78            android:value="2" />
+78-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:61:13-30
+79        <!-- <meta-data -->
+80        <!-- android:name="com.google.android.gms.ads.APPLICATION_ID" -->
+81        <!-- android:value="ca-app-pub-3940256099942544~3347511713"/> -->
+82        <!-- <meta-data android:name="com.facebook.sdk.ApplicationId" -->
+83        <!-- android:value="@string/facebook_app_id"/> -->
+84
+85
+86        <!-- <activity android:name="com.facebook.FacebookActivity" -->
+87        <!-- android:configChanges= -->
+88        <!-- "keyboard|keyboardHidden|screenLayout|screenSize|orientation" -->
+89        <!-- android:label="@string/app_name" /> -->
+90
+91
+92        <!-- <activity -->
+93        <!-- android:name="com.facebook.CustomTabActivity" -->
+94        <!-- android:exported="true"> -->
+95        <!-- <intent-filter> -->
+96        <!-- <action android:name="android.intent.action.VIEW" /> -->
+97        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+98        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+99        <!-- <data android:scheme="@string/fb_login_protocol_scheme" /> -->
+100        <!-- </intent-filter> -->
+101        <!-- </activity> -->
+102        <!-- <provider -->
+103        <!-- android:name="com.pichillilorenzo.flutter_inappwebview.InAppWebViewFileProvider" -->
+104        <!-- android:authorities="${applicationId}.flutter_inappwebview.fileprovider" -->
+105        <!-- android:exported="false" -->
+106        <!-- android:grantUriPermissions="true"> -->
+107        <!-- <meta-data -->
+108        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+109        <!-- android:resource="@xml/provider_paths" /> -->
+110        <!-- </provider> -->
+111        <service
+111-->[:cloud_firestore] D:\Flutter Project\TheMovieApp\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+112            android:name="com.google.firebase.components.ComponentDiscoveryService"
+112-->[:cloud_firestore] D:\Flutter Project\TheMovieApp\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+113            android:directBootAware="true"
+113-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b1ce67be3c46ef0e163cdee8e04456cf\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+114            android:exported="false" >
+114-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
+115            <meta-data
+115-->[:cloud_firestore] D:\Flutter Project\TheMovieApp\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+116                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+116-->[:cloud_firestore] D:\Flutter Project\TheMovieApp\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[:cloud_firestore] D:\Flutter Project\TheMovieApp\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+118            <meta-data
+118-->[:firebase_analytics] D:\Flutter Project\TheMovieApp\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:85
+119                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
+119-->[:firebase_analytics] D:\Flutter Project\TheMovieApp\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-127
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[:firebase_analytics] D:\Flutter Project\TheMovieApp\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-82
+121            <meta-data
+121-->[:firebase_auth] D:\Flutter Project\TheMovieApp\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+122                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+122-->[:firebase_auth] D:\Flutter Project\TheMovieApp\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[:firebase_auth] D:\Flutter Project\TheMovieApp\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+124            <meta-data
+124-->[:firebase_storage] D:\Flutter Project\TheMovieApp\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+125                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+125-->[:firebase_storage] D:\Flutter Project\TheMovieApp\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[:firebase_storage] D:\Flutter Project\TheMovieApp\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+127            <meta-data
+127-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-36:85
+128                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+128-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:35:17-128
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-82
+130            <meta-data
+130-->[:firebase_core] D:\Flutter Project\TheMovieApp\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+131                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+131-->[:firebase_core] D:\Flutter Project\TheMovieApp\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[:firebase_core] D:\Flutter Project\TheMovieApp\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+134                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+134-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+137                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+137-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-firestore:23.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\6ddaee0cf8dfcea150cb900082345eac\jetified-firebase-firestore-23.0.1\AndroidManifest.xml:20:13-22:85
+140                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+140-->[com.google.firebase:firebase-firestore:23.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\6ddaee0cf8dfcea150cb900082345eac\jetified-firebase-firestore-23.0.1\AndroidManifest.xml:21:17-111
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-firestore:23.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\6ddaee0cf8dfcea150cb900082345eac\jetified-firebase-firestore-23.0.1\AndroidManifest.xml:22:17-82
+142            <meta-data
+142-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\65519be5983d8f10a6af4e07c9b32ae0\firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
+143                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+143-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\65519be5983d8f10a6af4e07c9b32ae0\firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\65519be5983d8f10a6af4e07c9b32ae0\firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+145            <meta-data
+145-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\78e4eca12005f3adeebd54c833d06eca\play-services-measurement-api-19.0.0\AndroidManifest.xml:30:13-32:85
+146                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+146-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\78e4eca12005f3adeebd54c833d06eca\play-services-measurement-api-19.0.0\AndroidManifest.xml:31:17-139
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\78e4eca12005f3adeebd54c833d06eca\play-services-measurement-api-19.0.0\AndroidManifest.xml:32:17-82
+148            <meta-data
+148-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\39243d05426a54276c1f2bf2ea67aec1\firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+149                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+149-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\39243d05426a54276c1f2bf2ea67aec1\firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\39243d05426a54276c1f2bf2ea67aec1\firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+151            <meta-data
+151-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5b2a4f76f1211aa800b70eb383069197\firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+152                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+152-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5b2a4f76f1211aa800b70eb383069197\firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5b2a4f76f1211aa800b70eb383069197\firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+154        </service>
+155        <service
+155-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-15:72
+156            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+156-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-107
+157            android:exported="false"
+157-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+158            android:permission="android.permission.BIND_JOB_SERVICE" />
+158-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-69
+159        <service
+159-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-22:19
+160            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+160-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-97
+161            android:exported="false" >
+161-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+162            <intent-filter>
+162-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+163                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+163-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+163-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+164            </intent-filter>
+165        </service>
+166
+167        <receiver
+167-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-31:20
+168            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+168-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-98
+169            android:exported="true"
+169-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-36
+170            android:permission="com.google.android.c2dm.permission.SEND" >
+170-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-73
+171            <intent-filter>
+171-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+172                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+172-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+172-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+173            </intent-filter>
+174        </receiver>
+175
+176        <provider
+176-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:38
+177            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+177-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-102
+178            android:authorities="com.hsmobile.flutter_mvvm.flutterfirebasemessaginginitprovider"
+178-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-88
+179            android:exported="false"
+179-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-37
+180            android:initOrder="99" />
+180-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-35
+181
+182        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+182-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-106
+182-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:19-103
+183        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
+183-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-20:20
+183-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-107
+184            <intent-filter>
+184-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-19:29
+185                <action android:name="android.intent.action.BOOT_COMPLETED" />
+185-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-79
+185-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:25-76
+186                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+186-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-84
+186-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:25-81
+187                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+187-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-82
+187-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:25-79
+188                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+188-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-82
+188-->[:flutter_local_notifications] D:\Flutter Project\TheMovieApp\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:25-79
+189            </intent-filter>
+190        </receiver>
+191        <receiver
+191-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+192            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+192-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+193            android:exported="true"
+193-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+194            android:permission="com.google.android.c2dm.permission.SEND" >
+194-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+195            <intent-filter>
+195-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+196                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+196-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+196-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+197            </intent-filter>
+198        </receiver>
+199        <!--
+200             FirebaseMessagingService performs security checks at runtime,
+201             but set to not exported to explicitly avoid allowing another app to call it.
+202        -->
+203        <service
+203-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+204            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+204-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+205            android:directBootAware="true"
+205-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+206            android:exported="false" >
+206-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\df32e6bd6b7dcd13aee419c7ae09401d\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+207            <intent-filter android:priority="-500" >
+207-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+208                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+208-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+208-->[:firebase_messaging] D:\Flutter Project\TheMovieApp\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+209            </intent-filter>
+210        </service>
+211
+212        <activity
+212-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+213            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+213-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+214            android:excludeFromRecents="true"
+214-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+215            android:exported="true"
+215-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+216            android:launchMode="singleTask"
+216-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+217            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+217-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+218            <intent-filter>
+218-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+219                <action android:name="android.intent.action.VIEW" />
+219-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+219-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+220
+221                <category android:name="android.intent.category.DEFAULT" />
+221-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:54:17-76
+221-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:54:27-73
+222                <category android:name="android.intent.category.BROWSABLE" />
+222-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+222-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+223
+224                <data
+224-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+225                    android:host="firebase.auth"
+225-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+226                    android:path="/"
+226-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+227                    android:scheme="genericidp" />
+227-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+228            </intent-filter>
+229        </activity>
+230        <activity
+230-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+231            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+231-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+232            android:excludeFromRecents="true"
+232-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+233            android:exported="true"
+233-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+234            android:launchMode="singleTask"
+234-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+235            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+235-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+236            <intent-filter>
+236-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+237                <action android:name="android.intent.action.VIEW" />
+237-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+237-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+238
+239                <category android:name="android.intent.category.DEFAULT" />
+239-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:54:17-76
+239-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:54:27-73
+240                <category android:name="android.intent.category.BROWSABLE" />
+240-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+240-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+241
+242                <data
+242-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+243                    android:host="firebase.auth"
+243-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+244                    android:path="/"
+244-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+245                    android:scheme="recaptcha" />
+245-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+246            </intent-filter>
+247        </activity>
+248
+249        <service
+249-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+250            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+250-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+251            android:enabled="true"
+251-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+252            android:exported="false" >
+252-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+253            <intent-filter>
+253-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+254                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+254-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+254-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\cf0753c02d351d42b95510955dc199e5\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+255
+256                <category android:name="android.intent.category.DEFAULT" />
+256-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:54:17-76
+256-->D:\Flutter Project\TheMovieApp\android\app\src\main\AndroidManifest.xml:54:27-73
+257            </intent-filter>
+258        </service>
+259
+260        <provider
+260-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b1ce67be3c46ef0e163cdee8e04456cf\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+261            android:name="com.google.firebase.provider.FirebaseInitProvider"
+261-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b1ce67be3c46ef0e163cdee8e04456cf\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+262            android:authorities="com.hsmobile.flutter_mvvm.firebaseinitprovider"
+262-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b1ce67be3c46ef0e163cdee8e04456cf\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+263            android:directBootAware="true"
+263-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b1ce67be3c46ef0e163cdee8e04456cf\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+264            android:exported="false"
+264-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b1ce67be3c46ef0e163cdee8e04456cf\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+265            android:initOrder="100" />
+265-->[com.google.firebase:firebase-common:20.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b1ce67be3c46ef0e163cdee8e04456cf\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+266
+267        <activity
+267-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\c5ac338944b0ea29abf0013fd53caf99\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+268            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+268-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\c5ac338944b0ea29abf0013fd53caf99\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+269            android:exported="false"
+269-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\c5ac338944b0ea29abf0013fd53caf99\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+270            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+270-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\c5ac338944b0ea29abf0013fd53caf99\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+271
+272        <receiver
+272-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:29:9-33:20
+273            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+273-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:30:13-85
+274            android:enabled="true"
+274-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:31:13-35
+275            android:exported="false" >
+275-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:32:13-37
+276        </receiver>
+277
+278        <service
+278-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:35:9-38:40
+279            android:name="com.google.android.gms.measurement.AppMeasurementService"
+279-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:36:13-84
+280            android:enabled="true"
+280-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:37:13-35
+281            android:exported="false" />
+281-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:38:13-37
+282        <service
+282-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:39:9-43:72
+283            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+283-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:40:13-87
+284            android:enabled="true"
+284-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:41:13-35
+285            android:exported="false"
+285-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:42:13-37
+286            android:permission="android.permission.BIND_JOB_SERVICE" />
+286-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3d069cbea966962276a192a2b0eeea2f\play-services-measurement-19.0.0\AndroidManifest.xml:43:13-69
+287
+288        <meta-data
+288-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\6a8fc423156815b8cbd43ba6db3aea39\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+289            android:name="com.google.android.gms.version"
+289-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\6a8fc423156815b8cbd43ba6db3aea39\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+290            android:value="@integer/google_play_services_version" />
+290-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\6a8fc423156815b8cbd43ba6db3aea39\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+291
+292        <service
+292-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5ba555310df09b2d4d4dc5d807de6a1a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+293            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+293-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5ba555310df09b2d4d4dc5d807de6a1a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+294            android:exported="false" >
+294-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5ba555310df09b2d4d4dc5d807de6a1a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+295            <meta-data
+295-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5ba555310df09b2d4d4dc5d807de6a1a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+296                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+296-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5ba555310df09b2d4d4dc5d807de6a1a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+297                android:value="cct" />
+297-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5ba555310df09b2d4d4dc5d807de6a1a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+298        </service>
+299        <service
+299-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5839022861393e09116b60c8f2204fa6\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+300            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+300-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5839022861393e09116b60c8f2204fa6\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+301            android:exported="false"
+301-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5839022861393e09116b60c8f2204fa6\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+302            android:permission="android.permission.BIND_JOB_SERVICE" >
+302-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5839022861393e09116b60c8f2204fa6\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+303        </service>
+304
+305        <receiver
+305-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5839022861393e09116b60c8f2204fa6\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+306            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+306-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5839022861393e09116b60c8f2204fa6\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+307            android:exported="false" />
+307-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\5839022861393e09116b60c8f2204fa6\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+308    </application>
+309
+310</manifest>

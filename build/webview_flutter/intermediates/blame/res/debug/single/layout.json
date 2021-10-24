@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\layout\\notification_template_part_time.xml"
+    }
+]

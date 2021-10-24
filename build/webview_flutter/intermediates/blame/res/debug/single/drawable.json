@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\drawable\\notification_tile_bg.xml"
+    }
+]

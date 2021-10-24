@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Flutter Project\\TheMovieApp\\build\\webview_flutter\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\97168ee4d0db3427838285cdd40577bc\\core-1.1.0\\res\\layout-v21\\notification_action.xml"
+    }
+]
